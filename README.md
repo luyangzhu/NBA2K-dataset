@@ -48,9 +48,10 @@ Matrix mapping from vertices position to joints position.
 
 ## Data Processing
 You can directly use the training data in mesh_release.zip. We also provide scripts for processing the raw data. Here are the necessary steps to run the script:
-- Install dependences: numpy and opencv-python
+- Install dependences: numpy, opencv-python, shapely, imgaug
 - Make sure you have more than 100GB disk space. Download images.zip, pose.zip and mesh.zip to your DATA_ROOT_FOLDER, then unzip the file, for example `unzip images.zip -d images`.
 - Clone this repo to your DATA_ROOT_FOLDER, set the `root_folder` in prepare_data.py to your DATA_ROOT_FOLDER, then run `python prepare_data.py`.
+- We also provide the code to generate the court line masks. Set the `root_folder` in gen_line_maps.py to your DATA_ROOT_FOLDER, then run `python gen_line_maps.py`.
 
 ## Requesting the Dataset
 Please fill in the [Google form](https://forms.gle/xp1EMji4Hv6HccT49) to request the dataset.
